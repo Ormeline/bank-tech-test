@@ -7,7 +7,7 @@ npm init -y
 npm add jest
 npm install -g jest
 node run index.js
-jest -coverage (this will help me know test coverage)
+jest --coverage (this will help me know test coverage)
 
 jest
 
@@ -60,8 +60,7 @@ To structure the code, I separated each class into its own file and used separat
  The index.js file was responsible for instantiating the BankAccount object, performing transactions, and printing the transaction history and total balance to the console.
 
 ### Test coverage
-
-![Alt text](<Screenshot 2023-06-21 at 12.12.23.png>)
+![Alt text](<Screenshot 2023-06-21 at 15.36.59.png>)
 
 ### result on node
 
