@@ -1,15 +1,18 @@
 # Bank tech test
 
 ###  How to install and run my code and tests:
-nvm install node
-nvm use node
-npm init -y
-npm add jest
-npm install -g jest
-node run index.js
-jest --coverage (this will help me know test coverage)
 
-jest
+Install dependencies:
+
+- Install Node.js if not already installed
+- run nvm use node to check that you are using the lastest version of node
+- Initialize npm by running npm init -y in the terminal
+
+Install Jest testing framework by running npmnpm add jest
+then npm install -g jest.
+
+Run tests:
+To run all tests, you have to run jest in the terminal
 
 # User story:
 As a user,
@@ -60,11 +63,12 @@ To structure the code, I separated each class into its own file and used separat
  The index.js file was responsible for instantiating the BankAccount object, performing transactions, and printing the transaction history and total balance to the console.
 
 ### Test coverage
-![Alt text](<Screenshot 2023-06-21 at 15.36.59.png>)
+![test coverage](https://imgur.com/a/njygteP)
+
 
 ### result on node
 
-![Alt text](<Screenshot 2023-06-21 at 13.32.54.png>)
+![node] (https://imgur.com/UAtyZw3)
 
 
 

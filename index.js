@@ -13,8 +13,7 @@ bankAccount.deposit(1000, date1, "credit");
 bankAccount.deposit(2000, date2, "credit");
 bankAccount.withdraw(500, date3, "debit");   
 
-const printer = new PrintStatement();
-printer.print(bankAccount.transactions);
+bankAccount.transactions.reverse();
 
-const totalBalance = bankAccount.balance;
-console.log(`Total balance: ${totalBalance.toFixed(2)}`);
+const printer = new PrintStatement();  
+printer.print(bankAccount.transactions);
