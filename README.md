@@ -20,6 +20,10 @@ To structure the code, I separated each class into its own file and used separat
 
 The index.js file is responsible for instantiating the BankAccount object by calling new BankAccount(), performing transactions by calling deposit() and withdraw() methods, reversing the transactions array so the most recent transaction is first, instantiating the PrintStatement object by calling new PrintStatement(), and calling the print() method on the PrintStatement object, passing in the transactions array. This prints the transaction history to the console in reverse chronological order, reflecting the final balance of the bank account.
 
+This is the diagram:
+![Diagram](images-bank-tech-test/diagram.png)
+
+
 # User story:
 As a user,
 So that I can manage my finances,
@@ -70,10 +74,9 @@ date || credit || debit || balance
 ```
 
 ### Test coverage
-![Coverage](desktop/coverage.png)
-
+![Coverage](images-bank-tech-test/coverage.png)
 
 
 ### result on node
 
-![Node result](desktop/node_result.png)
+![Node result](images-bank-tech-test/node_result.png)
