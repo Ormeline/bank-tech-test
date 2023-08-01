@@ -10,7 +10,7 @@ This is a project developed as a solution to the Bank Tech Test challenge during
 5. Install Jest testing framework by running npm add jest
 then npm install -g jest.
 
-Run tests:
+###  Run tests:
 To run all tests, you have to run jest in the terminal
 
 # Planning
@@ -18,7 +18,7 @@ To create the banking tech test, I followed a structured approach. I identified 
 
 To structure the code, I separated each class into its own file and used separate test files. I followed a test-driven development approach to ensure code correctness.
 
- The index.js file was responsible for instantiating the BankAccount object, performing transactions, and printing the transaction history and total balance to the console.
+The index.js file is responsible for instantiating the BankAccount object by calling new BankAccount(), performing transactions by calling deposit() and withdraw() methods, reversing the transactions array so the most recent transaction is first, instantiating the PrintStatement object by calling new PrintStatement(), and calling the print() method on the PrintStatement object, passing in the transactions array. This prints the transaction history to the console in reverse chronological order, reflecting the final balance of the bank account.
 
 # User story:
 As a user,
