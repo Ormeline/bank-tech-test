@@ -1,18 +1,24 @@
 # Bank tech test
+This is a project developed as a solution to the Bank Tech Test challenge during the tenth week of the Makers Academy course. It is a command-line tool that mimics a bank account and enables users to perform various banking operations such as depositing and withdrawing money, and viewing their transaction history.
 
-###  How to install and run my code and tests:
+###  Using Bank Tech Test
+1. Clone the repository and go to the directory using the command cd documents/programming/bank-tech-test
 
-Install dependencies:
-
-- Install Node.js if not already installed
-- run nvm use node to check that you are using the lastest version of node
-- Initialize npm by running npm init -y in the terminal
-
-Install Jest testing framework by running npmnpm add jest
+2. Install Node.js if not already installed
+3. run nvm use node to check that you are using the lastest version of node
+4. Initialise npm by running npm init -y in the terminal
+5. Install Jest testing framework by running npm add jest
 then npm install -g jest.
 
 Run tests:
 To run all tests, you have to run jest in the terminal
+
+# Planning
+To create the banking tech test, I followed a structured approach. I identified the core functionalities required and created a user story for each feature. I then carefully thought about the classes, methods, names and how they would function following the single method design pattern.
+
+To structure the code, I separated each class into its own file and used separate test files. I followed a test-driven development approach to ensure code correctness.
+
+ The index.js file was responsible for instantiating the BankAccount object, performing transactions, and printing the transaction history and total balance to the console.
 
 # User story:
 As a user,
@@ -21,24 +27,32 @@ I would like to create an account.
 
 As a user,
 So that I can keep money in my account,
-I would like to be able to make a deposit into my account.
+I would like to be able to make a deposit.
 
 As a user,
 So that I can spend money from my account,
-I would like to be able to withdraw money from my account.
+I would like to be able to withdraw money.
 
 As a user,
 So that I can keep track of my financial activities,
 I would like to be able to print my bank statement.
 
-## Specification
+## Classes and methods
 
-### Requirements
+Class      | Methods | Instance variables
+------------ | ------------- | -------------
+| BankAccount | Deposit() | this.balance |
+|            | Withdraw() | this.transactactions |
+|            | constructor()|             |
+| PrintStatement| print() |            |
+| Transaction| constructor() |date    |
+|            |              | amount  |
+|            |              | type    |
+|           |              | balance |
+|           | print()      | initialBalance|
+|           | reverse()    | printer |
+|           |              | date1, date2, date3|
 
-* You should be able to interact with your code via a REPL like IRB or Node.  (You don't need to implement a command line interface that takes input from STDIN.)
-* Deposits, withdrawal.
-* Account statement (date, amount, balance) printing.
-* Data can be kept in memory (it doesn't need to be stored to a database or anything).
 
 ### Acceptance criteria
 
@@ -46,7 +60,7 @@ I would like to be able to print my bank statement.
 **And** a deposit of 2000 on 13-01-2023  
 **And** a withdrawal of 500 on 14-01-2023  
 **When** she prints her bank statement  
-**Then** she would see
+**Then** she would see:
 
 ```
 date || credit || debit || balance
@@ -55,29 +69,13 @@ date || credit || debit || balance
 10/01/2023 || 1000.00 || || 1000.00
 ```
 
-## My approach:
-To create the banking tech test, I followed a structured approach. I identified the core functionalities required and created the BankAccount class to implement them. Each transaction was represented by an object of the Transaction class, and the PrintStatement class created a formatted table for the transaction history.
 
-To structure the code, I separated each class into its own file and used separate test files. I followed a test-driven development approach to ensure code correctness.
-
- The index.js file was responsible for instantiating the BankAccount object, performing transactions, and printing the transaction history and total balance to the console.
 
 ### Test coverage
-![test coverage](https://imgur.com/a/njygteP)
+![test coverage](coverage.png)
+
 
 
 ### result on node
 
-![node] (https://imgur.com/UAtyZw3)
-
-
-
-## Self-assessment
-Once you have completed the challenge and feel happy with your solution, here's a form to help you reflect on the quality of your code: https://docs.google.com/forms/d/1Q-NnqVObbGLDHxlvbUfeAC7yBCf3eCjTmz6GOqC9Aeo/edit
-
-
-
-<!-- BEGIN GENERATED SECTION DO NOT EDIT -->
-
-
-<!-- END GENERATED SECTION DO NOT EDIT -->
+![node](node_result.png)
