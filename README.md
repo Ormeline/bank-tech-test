@@ -14,7 +14,7 @@ then npm install -g jest.
 To run all tests, you have to run jest in the terminal
 
 # Planning
-To create the banking tech test, I followed a structured approach. I identified the core functionalities required and created a user story for each feature. I then carefully thought about the classes, methods, names and how they would function following the single method design pattern.
+To create the banking tech test, I followed a structured approach. I identified the core functionalities required and created a user story for each feature. I then carefully thought about the classes, methods, names and how they would function following the Single Responsibility Principle (SRP).
 
 To structure the code, I separated each class into its own file and used separate test files. I followed a test-driven development approach to ensure code correctness.
 
